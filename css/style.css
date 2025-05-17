@@ -1,0 +1,73 @@
+/*global css start*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, li{
+    list-style-type: none;
+}
+
+/*global css end*/
+
+/* <!-- process step card section start --> */
+
+.process-step-card{
+    position: relative;
+}
+
+.process-step-card::after{
+    content: 'Previous Education Certificates';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #265367;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+
+.psc-left{
+    min-width: 160px; background-color: #265367;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.process-step-card:hover .psc-left{
+    width: auto;
+    left: 0;
+    right: auto;
+}
+
+.psc-left h5{
+    font-size: 3rem;
+}
+
+.psc-right{
+    padding-right: 10px;
+}
+
+
+.process-step-card:hover::after{
+    width: 20%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+    left: 0;
+    right: auto;
+}
+
+/* <!-- process step card section end --> */
