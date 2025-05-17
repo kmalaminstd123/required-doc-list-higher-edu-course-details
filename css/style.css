@@ -70,4 +70,67 @@ ol, li{
     right: auto;
 }
 
+.psc-left-md{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .process-step-card {
+        flex-direction: column;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .psc-left-lg{
+        display: none !important;
+    }
+
+    .psc-left-md{
+        display: flex !important;
+    }
+
+    .psc-left {
+        min-width: 100%;
+        padding: 1rem !important;
+    }
+
+    .psc-left-lg{
+        display: none;
+    }
+
+    .psc-left h5 {
+        font-size: 2rem;
+    }
+
+    .psc-right {
+        padding: 1rem !important;
+    }
+
+    .process-step-card::after {
+        font-size: 20px;
+        padding: 10px;
+        display: none;
+    }
+
+    .process-step-card:hover::after {
+        width: 100%;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .psc-left h5 {
+        font-size: 1.5rem;
+    }
+
+    .process-step-card::after {
+        font-size: 16px;
+        display: none;
+    }
+}
 /* <!-- process step card section end --> */
+
+/* Add these media queries at the end of your file */
